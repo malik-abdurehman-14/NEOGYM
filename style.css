@@ -1,0 +1,390 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+  }
+.maintext{
+    color: #ffffff;
+}
+
+.hero_area {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(hero-bg.jpg);
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+ .navbar {
+        list-style-type: none;
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        position: relative; 
+    }
+
+    .navbar a::after {
+        content: '';
+        position: absolute;
+        bottom: -3px; 
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: red; 
+        transition: width 0.3s ease; 
+    }
+   
+    .navbar a:hover::after {
+        width: 100%;
+    }
+
+
+
+/* slider section  */
+
+
+  .sect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pic-ctn {
+    position: relative;
+    width: 60vw;
+    height: 500px;
+    margin-top: 15vh;
+    overflow: hidden;
+  }
+  
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: .5rem;
+  }
+  
+  .text {
+    position: absolute;
+    color: #ffffff;
+    top: 0;
+    text-align: center;
+    opacity: 0;
+    animation: display 10s infinite;
+  }
+
+  .button1 {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    margin-top: 10px;
+    padding: 7px 20px 7px;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s; /* Add transition */
+  }
+  
+  .button1:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #000000; /* Change border color on hover */
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  /* Adjust animation delay */
+  .text:nth-child(2) {
+    animation-delay: 3s; /* Changed from 2s to 3s */
+  }
+  
+  .text:nth-child(3) {
+    animation-delay: 6s; /* Changed from 4s to 6s */
+  }
+  
+  .text:nth-child(4) {
+    animation-delay: 9s; /* Changed from 6s to 9s */
+  }
+  
+  .text:nth-child(5) {
+    animation-delay: 12s; /* Changed from 8s to 12s */
+  }
+
+
+
+  /* Why us Section */
+
+.heading{
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+  .us_section {
+    background-image: url(us-bg.jpg);
+    background-size: cover;
+    display: flex;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-bottom: 100px;
+  }
+
+.us-container {
+  padding-top: 25px;
+}
+  
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 25px 10px 0 10px;
+}
+
+.img-box {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-box img {
+  max-width: 100%;
+}
+.detail-box h5 {
+  font-weight: bold;
+}
+
+
+
+/* Health Section */
+
+
+
+
+.health-section {
+  background-image: url(healthy-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.health-section h2 {
+  font-weight: bold;
+}
+.health-section p {
+  margin-top: 35px;
+}
+
+.btn-box {
+  display: flex;
+ justify-content: center;
+  margin-top: 45px;
+}
+
+.btn-box a {
+  padding: 8px 35px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+}
+ .btn-box a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+
+
+/* TRAINERS SECTION */
+
+
+
+.trainer-section {
+  background-image: url(trainer-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  padding-bottom: 100px;
+}
+
+.heading b{
+   font-size: larger;  
+}
+
+.box-1 {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.name h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.img-box {
+  border-radius: 15px;
+  height: auto;
+  overflow: hidden;
+}
+
+.logo_box {
+  display: flex;
+  justify-content: space-between;
+  width: 225px;
+  padding: 12px 45px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin-top: -25px;
+}
+
+
+/* CONTACT SECTION */
+
+.contact_section {
+  position: relative;
+  background-color: #27223f;
+  color: #ffffff;
+}
+
+.contact-section .row {
+    align-items: center;
+}
+
+.contact-img img {
+  width: 100%;
+}
+
+.form_container {
+  padding: 45px 0 45px 15px;
+}
+
+.input-fields {
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+  margin-top: 25px;
+  padding: 12px;
+}
+
+.contact-btn {
+  padding: 10px 65px;
+  margin: 45px 0 0 auto;
+}
+
+
+
+/* INFO SECTION */
+
+
+
+
+
+.info-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #252233;
+}
+
+.info-box {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.info {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img-1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.detail {
+  margin-top: 5px;
+  color: #fff;
+}
+
+.info-box {
+  position: relative;
+}
+
+.info-box a {
+  position: relative;
+  text-decoration: none;
+}
+
+
+
+.footer-section {
+  background-color: #fbfdfd;
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.footer-section p {
+  color: #292929;
+  text-align: center;
+}
+
+.footer-section a {
+  color: #292929;
+  text-decoration: none;
+}
